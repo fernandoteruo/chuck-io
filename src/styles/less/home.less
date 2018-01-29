@@ -1,0 +1,28 @@
+@import "common"; //common.less
+
+.home {
+  .container {
+    .sizes();
+
+    .row {
+      .row-card();
+      .card {
+        &:hover {
+          color: @white-2;
+          background-color: @dark-grey;
+          font-weight: 600;
+        }
+        width: 90%;
+        @media(min-width: 480px) {
+          width: 34%;
+        }
+        @media(min-width: 978px){
+          width: 25%;
+        }
+        @media(min-width: 1200px){
+          width: 18%;
+        }
+      }
+    }
+  }
+}

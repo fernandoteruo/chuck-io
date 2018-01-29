@@ -1,0 +1,18 @@
+.banner img {
+  width: 100%;
+  height: auto;
+}
+@media (min-width: 700px) {
+  .banner img {
+    height: 200px;
+    width: auto;
+    margin: 0 auto;
+    display: table;
+  }
+}
+@media (min-width: 700px) {
+  .banner {
+    width: 100vw;
+    background-color: #fffdb2;
+  }
+}

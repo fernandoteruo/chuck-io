@@ -1,0 +1,37 @@
+@dark-grey: #343434;
+@light-grey: #636363;
+@extra-light-grey: #e4e4e4;
+@black-2: #1d1d1d;
+@white-2: #f0f0f0;
+
+.sizes() {
+  width: 90%;
+  margin: 0 auto;
+  @media (min-width: 992px) {
+    width: 90%;
+  }
+  @media (min-width: 1200px) {
+    width: 1170px;
+  }
+}
+
+.row-card() {
+  width: 100%;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  .card {
+    order: 1;
+    padding: 25px;
+    text-align: center;
+    text-transform: capitalize;
+    border: 1px solid;
+    margin: 15px auto;
+    position: relative;
+    color: @black-2;
+    background-color: transparent;
+    font-size: 1.2em;
+    text-decoration: none;
+  }
+}
