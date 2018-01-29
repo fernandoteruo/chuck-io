@@ -1,7 +1,7 @@
 # ChuckNorris IO testing app
 This small project is a test only, it requests categories and random jokes inside a category on https://api.chucknorris.io/
 
-##Technology stack and dependencies
+## Technology stack and dependencies
 - ReactJs
 - Redux
 - Less
@@ -11,7 +11,7 @@ This small project is a test only, it requests categories and random jokes insid
 
 See the file package.json for detailed dependencies, dev dependencies and versions.
 
-##Project organisation and structure
+## Project organisation and structure
 <pre>
     | -- __tests__
     | -- config
@@ -25,15 +25,15 @@ See the file package.json for detailed dependencies, dev dependencies and versio
         | -- utils | Api base requests
 </pre>
 
-##Project Running
+## Project Running
 1. Install dependencies (npm install)
 2. Run the project with the following command: gulp start --env {param}, where {param}=dev or prod (in the case i could have different api urls)
 
-##Project Unit Testing
+## Project Unit Testing
 1. Install dependencies
 2. Run npm test, it should run all tests in directory
 
-##Deploy
+## Deploy
 1. Install dependencies
 2. Run npm run-script build
 3. It will generate a directory (build), you must use this directory and files on your server
