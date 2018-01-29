@@ -1,6 +1,7 @@
 {
-  "name": "chuckio",
+  "name": "chuck-io",
   "version": "0.1.0",
+  "homepage": "https://fernandoteruo.github.io/chuck-io",
   "private": true,
   "dependencies": {
     "less": "^2.7.3",
@@ -17,7 +18,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "jest",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
@@ -26,6 +29,7 @@
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
     "fetch-mock": "^6.0.0",
+    "gh-pages": "^1.1.0",
     "gulp": "^3.9.1",
     "gulp-rename": "^1.2.2",
     "gulp-shell": "^0.6.5",
