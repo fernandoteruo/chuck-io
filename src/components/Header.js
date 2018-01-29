@@ -36,7 +36,7 @@ export class Header extends React.Component {
                         <span className={"icon-bar icon-bar-middle " + this.state.active}></span>
                         <span className={"icon-bar icon-bar-bottom " + this.state.active}></span>
                     </button>
-                    <a href="/" className="mobile">
+                    <a href={config.base + "/"} className="mobile">
                         <img src="https://assets.chucknorris.host/img/chucknorris_logo_coloured_small@2x.png"
                              alt="Logo Header"/>
                     </a>
