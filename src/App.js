@@ -29,7 +29,7 @@ class App extends React.Component {
         return (
             <div>
                 <Header></Header>
-                <BrowserRouter>
+                <BrowserRouter basename={process.env.PUBLIC_URL}>
                     <Switch>
                         {this.state.routes.map((route, index) => (
                             <Route key={index} path={route.path} exact={route.exact} component={route.component}/>
