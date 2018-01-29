@@ -40,5 +40,7 @@ See the file package.json for detailed dependencies, dev dependencies and versio
 
 ## Author
 Name: Fernando Teruo Maeji Ishikawa
+
 E-mail: fernandoteruo@gmail.com
+
 Sao Paulo, Brazil
