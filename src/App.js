@@ -5,6 +5,7 @@ import {Header} from "./components/Header";
 import {Home} from "./components/Home";
 import "./styles/css/app.css";
 import {ListJokes} from "./containers/ListJokes";
+import config from "./utils/config";
 
 class App extends React.Component {
     constructor(props) {
@@ -29,10 +30,10 @@ class App extends React.Component {
         return (
             <div>
                 <Header></Header>
-                <BrowserRouter basename={process.env.PUBLIC_URL}>
+                <BrowserRouter>
                     <Switch>
                         {this.state.routes.map((route, index) => (
-                            <Route key={index} path={route.path} exact={route.exact} component={route.component}/>
+                            <Route key={index} path={config.base + route.path} exact={route.exact} component={route.component}/>
                         ))}
                         <Redirect to="/404" />
                     </Switch>

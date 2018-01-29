@@ -29,3 +29,11 @@ gulp.task("config", function() {
 });
 
 gulp.task("start", ["config", "startClient", "lessWatch"]);
+
+gulp.task("build", ["config", "lessCompile"], function() {
+    return gulp.src("").pipe(shell(["yarn build"]));
+});
+
+gulp.task("deploy", ["build"], function() {
+    return gulp.src("").pipe(shell(["yarn deploy"]));
+});
