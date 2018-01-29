@@ -35,7 +35,12 @@ See the file package.json for detailed dependencies, dev dependencies and versio
 
 ## Deploy
 1. Install dependencies
-2. Run npm run-script build
+2. Run gulp build --env prod
+3. It will generate a directory (build), you must use this directory and files on your server
+
+## Deploy GH-Pages
+1. Install dependencies
+2. Run gulp deploy --env prod
 3. It will generate a directory (build), you must use this directory and files on your server
 
 ## Author
