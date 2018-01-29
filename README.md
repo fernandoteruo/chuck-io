@@ -1,4 +1,4 @@
-#ChuckNorris IO testing app
+# ChuckNorris IO testing app
 This small project is a test only, it requests categories and random jokes inside a category on https://api.chucknorris.io/
 
 ##Technology stack and dependencies
@@ -37,3 +37,8 @@ See the file package.json for detailed dependencies, dev dependencies and versio
 1. Install dependencies
 2. Run npm run-script build
 3. It will generate a directory (build), you must use this directory and files on your server
+
+## Author
+Name: Fernando Teruo Maeji Ishikawa
+E-mail: fernandoteruo@gmail.com
+Sao Paulo, Brazil
