@@ -1,5 +1,6 @@
 import React from 'react';
 import "../styles/css/header.css";
+import config from "../utils/config";
 
 export class Header extends React.Component {
     constructor(props) {
@@ -19,9 +20,9 @@ export class Header extends React.Component {
     renderHeaderElements() {
         return (
             <div>
-                <li><a href="/">Item 1</a></li>
-                <li><a href="/">Item 2</a></li>
-                <li><a href="/">Item 3</a></li>
+                <li><a href={config.base + "/"}>Item 1</a></li>
+                <li><a href={config.base + "/"}>Item 2</a></li>
+                <li><a href={config.base + "/"}>Item 3</a></li>
             </div>
         );
     }
@@ -43,7 +44,7 @@ export class Header extends React.Component {
                         { this.renderHeaderElements() }
                     </ul>
                     <ul className="desktop logo">
-                        <a href="/"><img
+                        <a href={config.base + "/"}><img
                             src="https://assets.chucknorris.host/img/chucknorris_logo_coloured_small@2x.png"
                             alt="Logo Header"/></a>
                     </ul>
